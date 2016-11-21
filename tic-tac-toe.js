@@ -17,11 +17,12 @@ if (buttonClicked == 0) {
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+      }
     }
   }
 }
@@ -38,7 +39,7 @@ function makeshape2(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
@@ -59,11 +60,12 @@ function makeshape3(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+      }
     }
   }
 }
@@ -80,11 +82,12 @@ function makeshape4(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn =="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+      }
     }
   }
 }
@@ -101,11 +104,12 @@ function makeshape5(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+      }
     }
   }
 }
@@ -122,11 +126,12 @@ function makeshape6(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+      }
     }
   }
 }
@@ -143,11 +148,12 @@ function makeshape7(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+      }
     }
   }
 }
@@ -164,11 +170,12 @@ function makeshape8(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+      }
     }
   }
 }
@@ -185,11 +192,12 @@ function makeshape9(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn=="player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+      }
     }
   }
 }
