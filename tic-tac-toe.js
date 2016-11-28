@@ -4,23 +4,22 @@ var namespace = "http://www.w3.org/2000/svg"
 var turn = "player1"
 
 function makeshape1(){
-  if(turn =="player1"){
-    buttonClicked=1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",55)
   circle.setAttribute("cy",45)
   circle.setAttribute("r",45)
+  if(turn =="player1"){
   circle.setAttribute("fill","yellow")
+  turn = "player2"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-  turn = "player2"
 }else{
-  if(turn == "player2")
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-  turn = "player1"
+}
   }
 }
 function makeshape2(){
@@ -39,12 +38,10 @@ function makeshape2(){
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-    }
+}
   }
 }
 function makeshape3(){
-  if (turn == "player1"){
-    buttonClicked = 1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",255)
   circle.setAttribute("cy",45)
@@ -60,12 +57,10 @@ function makeshape3(){
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-      }
-    }
+}
   }
 }
 function makeshape4(){
-  if (turn == "player1"){
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",55)
   circle.setAttribute("cy",145)
@@ -76,18 +71,15 @@ function makeshape4(){
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
 }else{
-  if(turn =="player2"){
+  if(turn=="player2"){
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-      }
-    }
+}
   }
 }
 function makeshape5(){
-  if (buttonClicked == 0) {
-    buttonClicked = 1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",155)
   circle.setAttribute("cy",145)
@@ -103,13 +95,10 @@ function makeshape5(){
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-      }
-    }
+}
   }
 }
 function makeshape6(){
-  if (buttonClicked == 0) {
-    buttonClicked = 1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",255)
   circle.setAttribute("cy",145)
@@ -125,13 +114,10 @@ function makeshape6(){
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-      }
-    }
+}
   }
 }
 function makeshape7(){
-  if (buttonClicked == 0) {
-    buttonClicked = 1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",55)
   circle.setAttribute("cy",245)
@@ -147,13 +133,10 @@ function makeshape7(){
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-      }
-    }
+}
   }
 }
 function makeshape8(){
-  if (buttonClicked == 0) {
-    buttonClicked = 1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",155)
   circle.setAttribute("cy",245)
@@ -169,13 +152,10 @@ function makeshape8(){
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-      }
-    }
+}
   }
 }
 function makeshape9(){
-  if (buttonClicked == 0) {
-    buttonClicked = 1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",255)
   circle.setAttribute("cy",245)
@@ -191,7 +171,6 @@ function makeshape9(){
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-      }
-    }
+}
   }
 }
