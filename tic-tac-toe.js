@@ -1,34 +1,29 @@
 // Write all your JavaScript code in this file!
 // You can use the namespace variable that's defined here.
 var namespace = "http://www.w3.org/2000/svg"
-var turn ="player1"
-var buttonClicked = 0
+var turn = "player1"
 
 function makeshape1(){
-if (buttonClicked == 0) {
-  buttonClicked = 1
+  if(turn =="player1"){
+    buttonClicked=1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",55)
   circle.setAttribute("cy",45)
   circle.setAttribute("r",45)
-  if(turn =="player1"){
   circle.setAttribute("fill","yellow")
-  turn = "player2"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
+  turn = "player2"
 }else{
-  if(turn=="player2"){
+  if(turn == "player2")
   circle.setAttribute("fill","blue")
   turn="player1"
   var canvas = document.getElementById("game-board")
   canvas.appendChild(circle)
-      }
-    }
+  turn = "player1"
   }
 }
 function makeshape2(){
-  if (buttonClicked == 0) {
-    buttonClicked = 1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",155)
   circle.setAttribute("cy",45)
@@ -48,7 +43,7 @@ function makeshape2(){
   }
 }
 function makeshape3(){
-  if (buttonClicked == 0) {
+  if (turn == "player1"){
     buttonClicked = 1
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",255)
@@ -70,8 +65,7 @@ function makeshape3(){
   }
 }
 function makeshape4(){
-  if (buttonClicked == 0) {
-    buttonClicked = 1
+  if (turn == "player1"){
   var circle =document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",55)
   circle.setAttribute("cy",145)
